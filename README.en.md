@@ -98,6 +98,21 @@ account with IMAP and SMTP.
 5. **Test and publish:** send a test email and, once everything looks right, click
    **Publish** so the workflow runs on its own.
 
+### Catalogs and email logo
+
+The workflow downloads the catalogs and the logo from the website itself, from the
+`catalog/` folder (on Hostinger, inside `public_html`):
+
+| File | Used for |
+| --- | --- |
+| `catalog/vidal-technologies-service-catalog-pt.pdf` | Portuguese catalog |
+| `catalog/vidal-technologies-service-catalog-en.pdf` | English catalog |
+| `catalog/vidal-technologies-service-catalog-es.pdf` | Spanish catalog |
+| `catalog/logo-email.png` | Logo at the top of the email |
+
+If you change the folder or any file name, update the `CATALOGS` constant and the logo
+address in the **Build reply** node.
+
 The exported file has no passwords or keys. Everyone uses their own credentials inside
 n8n.
 

@@ -98,6 +98,21 @@ Supabase y una cuenta de correo con IMAP y SMTP.
 5. **Probar y publicar:** envía un correo de prueba y, cuando todo esté bien, haz clic
    en **Publish** para que el flujo funcione solo.
 
+### Catálogos y logo del correo
+
+El flujo descarga los catálogos y el logo del propio sitio, de la carpeta `catalog/`
+(en Hostinger, dentro de `public_html`):
+
+| Archivo | Uso |
+| --- | --- |
+| `catalog/vidal-technologies-service-catalog-pt.pdf` | Catálogo en portugués |
+| `catalog/vidal-technologies-service-catalog-en.pdf` | Catálogo en inglés |
+| `catalog/vidal-technologies-service-catalog-es.pdf` | Catálogo en español |
+| `catalog/logo-email.png` | Logo en la parte superior del correo |
+
+Si cambias la carpeta o el nombre de algún archivo, actualiza la constante `CATALOGS` y
+la dirección del logo en el nodo **Build reply**.
+
 El archivo exportado no tiene contraseñas ni claves. Cada persona usa sus propias
 credenciales dentro de n8n.
 
