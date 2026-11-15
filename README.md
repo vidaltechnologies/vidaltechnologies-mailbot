@@ -98,6 +98,21 @@ Supabase e uma conta de e-mail com IMAP e SMTP.
 5. **Testar e publicar:** mande um e-mail de teste e, quando estiver tudo certo,
    clique em **Publish** para o fluxo rodar sozinho.
 
+### Catálogos e logo do e-mail
+
+O fluxo baixa os catálogos e a logo do próprio site, da pasta `catalog/` (na Hostinger,
+dentro de `public_html`):
+
+| Arquivo | Uso |
+| --- | --- |
+| `catalog/vidal-technologies-service-catalog-pt.pdf` | Catálogo em português |
+| `catalog/vidal-technologies-service-catalog-en.pdf` | Catálogo em inglês |
+| `catalog/vidal-technologies-service-catalog-es.pdf` | Catálogo em espanhol |
+| `catalog/logo-email.png` | Logo no topo do e-mail |
+
+Se mudar a pasta ou o nome de algum arquivo, atualize a constante `CATALOGS` e o
+endereço da logo no nó **Build reply**.
+
 O arquivo exportado não tem nenhuma senha ou chave. Cada pessoa usa as próprias
 credenciais dentro do n8n.
 
